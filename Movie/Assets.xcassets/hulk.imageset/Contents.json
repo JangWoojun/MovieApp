@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "hulk.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "hulk.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

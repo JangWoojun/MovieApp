@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "ironman.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ironman.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
