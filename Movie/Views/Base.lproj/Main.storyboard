@@ -85,19 +85,19 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="azx-le-g9J" id="CIb-L1-B7I"/>
-                        <segue destination="HQs-YV-62N" kind="presentation" modalPresentationStyle="fullScreen" id="PwK-f3-G5B"/>
+                        <segue destination="HQs-YV-62N" kind="presentation" identifier="toDetail" modalPresentationStyle="automatic" id="PwK-f3-G5B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="MIV-Bd-x2l">
             <objects>
-                <viewController id="HQs-YV-62N" sceneMemberID="viewController">
+                <viewController id="HQs-YV-62N" customClass="DetailViewController" customModule="Movie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8D-9k-AF7">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TSg-dR-h2g">
@@ -138,6 +138,11 @@
                             <constraint firstItem="TSg-dR-h2g" firstAttribute="top" secondItem="xm6-GX-cCY" secondAttribute="top" constant="100" id="VmZ-wt-vjb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="UA8-K8-NGh" id="Kjf-ds-LyO"/>
+                        <outlet property="mainImageView" destination="4AN-ct-2Em" id="AsH-Ub-qUs"/>
+                        <outlet property="movieNameLabel" destination="wKv-Yi-Xe3" id="fJQ-KU-uwh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvs-rQ-aJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
