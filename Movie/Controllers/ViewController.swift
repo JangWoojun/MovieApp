@@ -1,8 +1,8 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+final class ViewController: UIViewController {
 
-    var movieDataManager = DataManager()
+    private var movieDataManager = DataManager()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -12,13 +12,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         setUP()
     }
     
-    func setUP() {
+    private func setUP() {
         movieDataManager.makeMovieData()
         
         tableView.dataSource = self
         tableView.rowHeight = 120
     }
-    
+
+}
+
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movieDataManager.getMovieData().count
     }
@@ -36,6 +39,5 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-
 }
 
