@@ -19,6 +19,8 @@ final class ViewController: UIViewController {
         tableView.delegate = self
 
         tableView.rowHeight = 120
+        
+        title = "영화 목록"
     }
 
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
