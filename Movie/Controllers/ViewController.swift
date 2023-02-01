@@ -37,6 +37,7 @@ extension ViewController: UITableViewDataSource {
         cell.mainImageView.image = movie.movieImage
         cell.movieNameLabel.text = movie.movieName
         cell.descriptionLabel.text = movie.movieDescription
+        cell.selectionStyle = .none
         
         return cell
     }
