@@ -21,6 +21,10 @@ final class ViewController: UIViewController {
         tableView.rowHeight = 120
     }
 
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        movieDataManager.updateMovieData()
+        tableView.reloadData()
+    }
 }
 
 extension ViewController: UITableViewDataSource {

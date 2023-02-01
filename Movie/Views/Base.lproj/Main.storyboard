@@ -83,7 +83,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="azx-le-g9J" secondAttribute="trailing" id="rFS-AW-6pg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RTh-h8-5rz"/>
+                    <navigationItem key="navigationItem" id="RTh-h8-5rz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nQS-Yq-bAf">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="mT6-Ul-lBy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="azx-le-g9J" id="CIb-L1-B7I"/>
                         <segue destination="HQs-YV-62N" kind="show" identifier="toDetail" id="PwK-f3-G5B"/>
